@@ -1,10 +1,10 @@
-import { AppSidebar } from "@/components/Sidebar"
+import { AppSidebar } from "@/components/Sidebar";
 import {
   SidebarInset,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar"
-import { Outlet } from "react-router-dom"
+} from "@/components/ui/sidebar";
+import { Outlet } from "react-router-dom";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -12,8 +12,8 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { Separator } from "@/components/ui/separator"
+} from "@/components/ui/breadcrumb";
+import { Separator } from "@/components/ui/separator";
 
 const MainLayout = () => {
   return (
@@ -42,7 +42,7 @@ const MainLayout = () => {
         </div>
       </SidebarInset>
     </SidebarProvider>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

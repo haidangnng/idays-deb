@@ -1,6 +1,4 @@
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Auth from "./auth";
 import ErrorPage from "./error-page";
 import Dashboard from "@/routes/dashboard";
@@ -9,24 +7,19 @@ import MainLayout from "./main-layout";
 const router = createBrowserRouter([
   {
     path: "/",
-    element:
-      <MainLayout />,
-    errorElement:
-      <ErrorPage />,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element:
-          <Dashboard />,
+        element: <Dashboard />,
       },
     ],
   },
   {
     path: "/auth",
-    element:
-      <Auth />,
+    element: <Auth />,
   },
 ]);
 
-
-export default router
+export default router;
